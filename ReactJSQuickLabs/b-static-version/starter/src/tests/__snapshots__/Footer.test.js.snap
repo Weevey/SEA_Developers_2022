@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matched snapshot 1`] = `
+<footer
+  className="mt-auto py-3 text-center container"
+>
+  <span>
+    ©
+  </span>
+   QA Ltd 2019-2023
+</footer>
+`;

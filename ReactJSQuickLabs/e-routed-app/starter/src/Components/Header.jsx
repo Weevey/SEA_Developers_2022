@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link, NavLink} from 'react-router-dom';
 import logo from "./images/qalogo.svg";
 
 const Header = () => {
@@ -14,10 +14,24 @@ const Header = () => {
         >
           <img src={logo} alt="QA Ltd" style={{ width: '100px' }} />
         </a>
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           <h1>Todo App</h1>
-        </a>
-      </nav>
+        </Link>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav mr-auto">
+            <li className="navbar-item">
+              <NavLink 
+               to="/"
+               className="nav-link"
+               activeClassName="nav-link active">Todos</NavLink></li>
+            <li className="navbar-item">
+              <NavLink 
+              to="/add"
+              className="nav-link"
+              activeClassName="nav-link active">Add Todos</NavLink></li>
+          </ul>
+        </div>
+        </nav>
     </header>
   );
 };
